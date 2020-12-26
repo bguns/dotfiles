@@ -1,0 +1,6 @@
+[core]
+	filemode = false
+	autocrlf = true
+[user]
+	email = bertguns@pm.me
+	name = Bert Guns
