@@ -1,4 +1,4 @@
-set PATH ~/.cargo/bin $PATH
+set PATH /home/bguns/.local/bin ~/.cargo/bin $PATH
 
 set -g theme_nerd_fonts yes
 set -g theme_color_scheme gruvbox
