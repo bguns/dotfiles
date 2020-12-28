@@ -23,7 +23,8 @@ echo "==== GET DOTFILES ====";
 alias cfg='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME' &&
 echo ".cfg" >> .gitignore &&
 git clone --bare https://github.com/bguns/dotfiles.git $HOME/.cfg &&
-cfg checkout;
+cfg checkout &&
+cfg config --local status.showUntrackedFiled no;
 
 # Disable auto-crlf (required for fish install)
 echo "==== DISABLE DOTFILES ====";
