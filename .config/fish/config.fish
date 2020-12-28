@@ -1,3 +1,7 @@
+if not test -d $OMF_PATH/themes/bobthefish
+    omf install bobthefish
+end
+
 set -gx PATH ~/.local/bin ~/.cargo/bin $PATH
 
 set -g theme_nerd_fonts yes
