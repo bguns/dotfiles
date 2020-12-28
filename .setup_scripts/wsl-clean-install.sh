@@ -20,15 +20,10 @@ sudo chsh -s /usr/bin/fish bguns;
 # Get dotfiles
 echo "==== GET DOTFILES ====";
 [ ! -e $HOME/.gitconfig ] || rm $HOME/.gitconfig
-alias cfg='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME' &&
 echo ".cfg" >> .gitignore &&
 git clone --bare https://github.com/bguns/dotfiles.git $HOME/.cfg &&
-cfg checkout &&
-cfg config --local status.showUntrackedFiled no;
-
-# Disable auto-crlf (required for fish install)
-echo "==== DISABLE DOTFILES ====";
-git config --global core.autocrlf false;
+/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME checkout &&
+/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME config --local status.showUntrackedFiled no;
 
 # Install oh-my-fish
 echo "==== INSTALL OH MY FISH ====";
