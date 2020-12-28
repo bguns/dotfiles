@@ -25,6 +25,6 @@ git clone --bare https://github.com/bguns/dotfiles.git $HOME/.cfg &&
 /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME checkout &&
 /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME config --local status.showUntrackedFiled no;
 
-# Install oh-my-fish
-echo "==== INSTALL OH MY FISH ====";
-curl -L https://get.oh-my.fish | fish;
+# Go Fish
+echo "==== GO FISH ====";
+exec fish
