@@ -1,8 +1,3 @@
-# If OMF is not installed, assume fresh install
-if not test -d ~/.config/omf
-    source ~/.setup_scripts/fish-shell-setup.fish
-end
-
 set -gx PATH ~/.local/bin ~/.cargo/bin $PATH
 
 set -g theme_nerd_fonts yes
