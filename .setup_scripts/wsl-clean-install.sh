@@ -19,6 +19,7 @@ chsh -s /usr/bin/fish;
 
 # Get dotfiles
 echo "==== GET DOTFILES ====";
+[ ! -e $HOME/.gitconfig ] || rm $HOME/.gitconfig
 alias cfg='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME' &&
 echo ".cfg" >> .gitignore &&
 git clone --bare https://github.com/bguns/dotfiles.git $HOME/.cfg &&
