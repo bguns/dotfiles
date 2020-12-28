@@ -1,11 +1,11 @@
 #!/bin/bash
 # Update basic packages
-echo "==== BASIC PACKAGE UPDATE ===="
+echo "==== BASIC PACKAGE UPDATE ====";
 sudo apt update && 
 sudo apt upgrade -y;
 
 # Install stack (do this first because of potentially broken stack + WSL interaction)
-echo "==== INSTALL STACK ===="
+echo "==== INSTALL STACK ====";
 curl -sSL https://get.haskellstack.org | sh &&
 export PATH="$HOME/.local/bin:$PATH" &&
 stack install ghci;
