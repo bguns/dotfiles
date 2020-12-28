@@ -1,4 +1,9 @@
-set PATH /home/bguns/.local/bin ~/.cargo/bin $PATH
+# If OMF is not installed, assume fresh install
+if not test -d ~/.config/omf
+    source ~/.setup_scripts/fish-shell-setup.fish
+end
+
+set PATH ~/.local/bin ~/.cargo/bin $PATH
 
 set -g theme_nerd_fonts yes
 set -g theme_color_scheme gruvbox
