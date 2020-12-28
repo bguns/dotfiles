@@ -15,7 +15,7 @@ echo "==== GET FISH ====";
 sudo apt-add-repository ppa:fish-shell/release-3 -y &&
 sudo apt-get update &&
 sudo apt-get install fish -y &&
-chsh -s /usr/bin/fish;
+sudo chsh -s /usr/bin/fish bguns;
 
 # Get dotfiles
 echo "==== GET DOTFILES ====";
